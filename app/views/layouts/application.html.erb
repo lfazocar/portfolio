@@ -10,11 +10,15 @@
     <%= javascript_importmap_tags %>
     <%# Bootstrap %>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <%# CSS for that one button %>
+    <%= stylesheet_link_tag 'button.css' %>
   </head>
 
   <body>
     <%= render "shared/navbar" %>
-    <%= yield %>
+    <div class="container text-center my-5" >
+      <%= yield %>
+    </div>
   </body>
 
   <%# Bootstrap %>
